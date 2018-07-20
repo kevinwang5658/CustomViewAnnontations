@@ -1,12 +1,10 @@
 package com.kevin.wang.customviewannontations;
 
-import androidx.annotation.NonNull;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.view.LayoutInflaterCompat;
-
 import android.os.Bundle;
 import android.view.LayoutInflater;
-import android.widget.TextView;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +13,9 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        inflater = LayoutInflater.from(this).cloneInContext(this);
+        inflater.setFactory2(new CustomInflaterFactory());
+
         setContentView(R.layout.activity_main);
     }
 
