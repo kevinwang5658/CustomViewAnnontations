@@ -1,0 +1,1 @@
+include ':app', ':cva-annotations', ':cva-compiler', ':test'

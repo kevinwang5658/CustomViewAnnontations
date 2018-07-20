@@ -1,0 +1,25 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+
+    implementation 'com.google.guava:guava:25.1-jre'
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation project(':cva-annotations')
+
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'org.mockito:mockito-core:2.19.1'
+}
+
+sourceSets {
+    test {
+        java {
+            srcDirs = ['src/test']
+        }
+    }
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
