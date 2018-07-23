@@ -1,4 +1,4 @@
-# CustomViewAnnontations
+# CustomViewAnnotations
 
 Generate a custom Factory2 class to speed inflate custom views without defaulting to reflection.
 
