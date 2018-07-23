@@ -20,10 +20,10 @@ module build.gradle
 ```Gradle
 
 dependencies {
-    implementation 'com.github.kevinwang5658.CustomViewAnnontations:cva-annotations:1.0'
+    implementation 'com.github.kevinwang5658.CustomViewAnnotations:cva-annotations:1.0'
     
     //For java
-    annotationProcessor 'com.github.kevinwang5658.CustomViewAnnontations:cva-compiler:1.0'
+    annotationProcessor 'com.github.kevinwang5658.CustomViewAnnotations:cva-compiler:1.0'
     
     //For kotlin
     kapt 'com.github.kevinwang5658.CustomViewAnnontations:cva-compiler:1.0'
